@@ -5,4 +5,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
+
+  validates :firstname, presence: true 
+  validates :lastname, presence: true 
+  validates_uniqueness_of :username
 end
