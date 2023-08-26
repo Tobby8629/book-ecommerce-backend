@@ -55,3 +55,7 @@ end
 gem 'devise', '~> 4.9'
 gem 'devise-jwt'
 gem 'fast_jsonapi'
+gem 'activestorage'
+gem 'cloudinary'
+gem 'ffi'
+

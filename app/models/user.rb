@@ -9,4 +9,10 @@ class User < ApplicationRecord
   validates :firstname, presence: true 
   validates :lastname, presence: true 
   validates_uniqueness_of :username
+
+  def jwt_payload
+    super
+  end
+
+  has_one_attached :icon
 end
